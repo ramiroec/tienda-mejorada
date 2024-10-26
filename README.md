@@ -41,6 +41,24 @@ Sigue los siguientes pasos para instalar y ejecutar el proyecto localmente:
 - **Detalles del producto**: Permite ver información detallada sobre un producto específico.
 - **Carrito de compras**: Agrega productos al carrito y simula una experiencia de compra.
 
+## 📚 Estructura del Proyecto
+
+```bash
+src/
+├── components/
+│   ├── Cart.tsx
+│   ├── Header.tsx
+│   ├── ProductDisplay.tsx
+│   ├── ProductDetail.tsx
+│   ├── CrearProducto.tsx
+│   ├── Login.tsx
+│   ├── Admin.tsx
+├── context/
+│   └── CartContext.tsx
+├── App.tsx
+├── main.tsx
+└── GlobalStyles.ts
+```
 
 ## 👤 Autor
 
