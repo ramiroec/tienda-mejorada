@@ -84,7 +84,7 @@ const ErrorMessage = styled.p`
 `;
 
 const Login: React.FC = () => {
-  const [username, setUsername] = useState('');
+  const [usernameX, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate(); // Usar useNavigate en lugar de useHistory
