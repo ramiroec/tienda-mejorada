@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useCart } from '../context/CartContext';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Container = styled.div`
   display: flex;
@@ -69,13 +70,14 @@ const Cart: React.FC = () => {
   const { cart, removeFromCart, clearCart } = useCart();
 
   const handleCheckout = () => {
-    alert('Compra simulada realizada con éxito!');
+    toast.success('Compra simulada realizada con éxito!', { position: 'top-center' });
     clearCart();
   };
 
   return (
     <Container>
-      <h1>Carrito de Compras</h1>
+            <ToastContainer />
+            <h1>Carrito de Compras</h1>
       {cart.length === 0 ? (
         <p>El carrito está vacío.</p>
       ) : (

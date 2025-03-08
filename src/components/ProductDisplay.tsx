@@ -144,7 +144,7 @@ const ProductDisplay: React.FC = () => {
             <Link to={`/product/${product.id}`}>
               <ProductImage src={product.image} alt={product.title} />
               <ProductTitle>{product.title}</ProductTitle>
-              <ProductPrice>${product.price}</ProductPrice>
+              <ProductPrice>Pecio: ${product.price} Oferta: ${product.price-(product.price/10)}</ProductPrice>
             </Link>
           </ProductItem>
         ))}

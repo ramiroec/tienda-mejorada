@@ -112,7 +112,7 @@ const Login: React.FC = () => {
         // Redirigir a /admin después de un pequeño retraso
         setTimeout(() => {
           navigate('/admin'); // Usar navigate para redirigir
-        }, 1000);
+        }, 3000);
       } else {
         setErrorMessage('Usuario o contraseña incorrectos');
       }
